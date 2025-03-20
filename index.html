@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameBooster - Главная</title>
-    <link rel="stylesheet" href="styles.css"
-    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <header>
@@ -56,5 +56,11 @@
     <footer>
         <p>&copy; 2021 GameBooster. Все права защищены.</p>
     </footer>
+    <script>
+        gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
+        gsap.from(".promo", { duration: 1, x: -100, opacity: 0, delay: 0.5, ease: "power2.out" });
+        gsap.from(".news", { duration: 1, x: 100, opacity: 0, delay: 0.7, ease: "power2.out" });
+        gsap.from(".top-games", { duration: 1, y: 50, opacity: 0, delay: 1, ease: "power2.out" });
+    </script>
 </body>
 </html>
