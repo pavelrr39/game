@@ -3,64 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameBooster - Главная</title>
+    <title>GameBooster</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="reviews.html">Обзоры</a></li>
-                <li><a href="jobs.html">Вакансии</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>GameBooster</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Обзоры</a></li>
+                    <li><a href="#">Техника</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="promo">
-            <h1>GeForce NOW!</h1>
-            <p>Технология NVIDIA. Сделайте любое устройство игровым! Запускайте любимые игры на старом ПК.</p>
-            <a href="#" class="button">Подробнее</a>
+        <section class="hero">
+            <div class="container">
+                <h2>GeForce NOW!</h2>
+                <p>Технология NVIDIA. Сделайте любое устройство игровым!</p>
+                <a href="#" class="btn">Подробнее</a>
+            </div>
         </section>
         <section class="news">
-            <h2>Новости</h2>
-            <article>
-                <h3>Вселенная LEGO Super Mario пополнилась новым набором с Луиджи</h3>
-                <p>Фигурка персонажа оснащена датчиком цвета...</p>
-                <a href="#">Подробнее</a>
-            </article>
-        </section>
-        <section class="top-games">
-            <h2>Топ 30 игр</h2>
-            <p>Лучшие клиентские и онлайн-игры</p>
-            <div class="game-list">
-                <div class="game">
-                    <h3>Blade of Kings</h3>
-                    <p>Фэнтезийная Idle-MMORPG</p>
-                    <span class="rating">9.8</span>
-                    <a href="#">Играть</a>
-                </div>
-                <div class="game">
-                    <h3>Blade of Kings</h3>
-                    <p>Фэнтезийная Idle-MMORPG</p>
-                    <span class="rating">9.8</span>
-                    <a href="#">Играть</a>
-                </div>
+            <div class="container">
+                <h2>Новости</h2>
+                <article>
+                    <h3>Вселенная LEGO Super Mario пополнилась новым набором с Луиджи</h3>
+                    <p>LEGO Луиджи ростом выше LEGO Марио на одну пластину...</p>
+                    <a href="#">Подробнее</a>
+                </article>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2021 GameBooster. Все права защищены.</p>
+        <div class="container">
+            <p>&copy; 2021 GameBooster. Все права защищены.</p>
+        </div>
     </footer>
-    <script>
-        gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
-        gsap.from(".promo", { duration: 1, x: -100, opacity: 0, delay: 0.5, ease: "power2.out" });
-        gsap.from(".news", { duration: 1, x: 100, opacity: 0, delay: 0.7, ease: "power2.out" });
-        gsap.from(".top-games", { duration: 1, y: 50, opacity: 0, delay: 1, ease: "power2.out" });
-    </script>
 </body>
 </html>
