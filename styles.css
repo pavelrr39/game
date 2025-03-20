@@ -39,6 +39,51 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Стили для блоков */
+.promo, .news, .top-games {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo h1 {
+    color: #d9534f;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.game {
+    flex: 1 1 calc(33.333% - 10px);
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.rating {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d9534f;
+    margin: 10px 0;
+}
+
 footer {
     text-align: center;
     padding: 15px;
@@ -57,5 +102,13 @@ footer {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .game-list {
+        flex-direction: column;
+    }
+
+    .game {
+        flex: 1 1 100%;
     }
 }
